@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddLocationActivity">
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Location"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:background="@color/main"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Address"
+                android:padding="15dp"
+                android:layout_margin="15dp"
+                android:textColorHint="@color/main"
+                android:textColor="@color/main"
+                android:background="@drawable/bg_field"/>
+
+            <EditText
+                android:id="@+id/etLatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Latitude"
+                android:inputType="numberDecimal"
+                android:padding="15dp"
+                android:layout_margin="15dp"
+                android:textColorHint="@color/main"
+                android:textColor="@color/main"
+                android:background="@drawable/bg_field"/>
+            <EditText
+                android:id="@+id/etLongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Longitude"
+                android:inputType="text|number"
+                android:padding="15dp"
+                android:layout_margin="15dp"
+                android:textColorHint="@color/main"
+                android:textColor="@color/main"
+                android:background="@drawable/bg_field"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="15dp"
+                android:gravity="center">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSaveLocation"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:text="Save Location"
+                    android:layout_marginEnd="10dp"
+                    app:backgroundTint="@color/main" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:text="Cancel"
+                    android:layout_marginStart="10dp"
+                    app:backgroundTint="@color/main" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
